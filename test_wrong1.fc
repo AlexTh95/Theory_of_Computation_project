@@ -1,0 +1,18 @@
+/* wrong1*/
+
+
+static integer random1[10][9],random2;
+
+integer cube(integer i)
+begin
+	return i * i * i  /*wrong line*/
+end
+ 
+void add(integer n, integer k)
+begin
+	integer j;
+	j := n + cube(k);
+	writeInteger(j);
+end
+
+

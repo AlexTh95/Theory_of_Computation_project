@@ -1,0 +1,85 @@
+/* correct1*/
+
+
+static integer random1[10][9],random2;
+
+integer cube(integer i)
+begin
+	return i * i * i;
+end
+ 
+void add(integer n, integer k)
+begin
+	integer j;
+	j := n + cube(k);
+	writeInteger(j);
+end
+
+void main()
+begin
+
+
+
+// variable declaration
+	boolean bool1:=false;
+	integer int1:=12, a;
+	string kl:="useless string!";
+a:=0;
+
+//expresions
+	int1 := -3 + 2*(6- 2)/8 mod (+9)+ cube(9);
+
+//if statement
+	if(int1<=32)
+	begin
+		int1:=int1+ 2;
+		a:=3;
+	end
+	else
+		int1:=int1+ 23;
+
+//for statement
+	for (a:=0;a>=cube(2);a:=a+ 1)
+	begin
+		int1:=a+ 2;
+		if(int1 + 2 >=65 && int1<100)
+			break;
+		else if(int1<2)
+		begin
+			;
+			int1:=3;
+			continue;
+		end
+		else
+			break;
+	end
+
+//while statement
+	a:=0;
+	while(a>-12)
+	begin
+		a:=a- 1;
+	end
+
+//do-while statement
+
+	do 
+	begin
+		a:=a+ 1;
+		a:=a* a;
+	end
+	while(a<5);
+
+//weird assignement
+	random1[2][5]:=2+cube(4*(8- a));
+
+//function testing
+	real y:=readReal();
+	writeString("writing a string");
+	integer k := readInteger();
+	integer i := readInteger();
+	writeInteger(k);
+	add(k,i); //Here you can see some dummy comments!
+
+	return ;
+end
