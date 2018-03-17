@@ -48,12 +48,12 @@ SYNTAX
                      
   ● Data types: ● integer ● boolean ● character ● real ● string
            
-  ● Variable declaration: <type> <identifier1>, <identifier2>, ..., <identifierk>;
-                          <type> <identifier>[n][m]...[k];
+  ● Variable declaration: type identifier1, identifier2, ..., identifierk;
+                          type identifier[n][m]...[k];
                                  
-  ● Functions: <type> <title> (<type> <identifier1>, <type> <identifier2>, ..., <type> <identifierk>)
+  ● Functions: type title (type identifier1, type identifier2, ..., type identifierk)
                           begin
-                               <body>
+                               body
                           end
                              
   ● Expressions
