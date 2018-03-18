@@ -1,16 +1,15 @@
 %{
 #define _GNU_SOURCE 
 #include <stdarg.h>
-  #include <stdio.h>
-  #include <string.h>
-  #include "cgen.h"
+#include <stdio.h>
+#include <string.h>
+#include "cgen.h"
 #include <stdlib.h>
 
 
-//copied from cgen.c
 
-  extern int yylex(void);
-  extern int lineNum;
+extern int yylex(void);
+extern int lineNum;
   
 
 void ssopen(sstream* S)
