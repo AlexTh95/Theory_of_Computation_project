@@ -69,10 +69,17 @@ SYNTAX
               -Continue command: continue;
               -Return command: return;
               -Call function command: f(e1 ,...,en );, where f is a function name, e are expressions.
+  
                                     
+Translate your code with the following instructions:
 
+bison -d –v –r all myparser.y
+flex mylexer.l
+gcc -o mycompiler lex.yy.c myparser.tab.c -lfl
 
+Call the executable mycompiler for entrance test.f1 by writing:
 
+./mycompiler < test.fl
 
 
 
